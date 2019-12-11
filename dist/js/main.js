@@ -41,7 +41,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var _this2 = this;
 
         var oReq = new XMLHttpRequest();
-        var url = "http://www.omdbapi.com/";
+        var url = "https://www.omdbapi.com/";
         var search = "s=".concat(this.search.query.value);
         var key = "apikey=31edb057";
         var response = "r=json";
@@ -155,7 +155,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       key: "goToDetails",
       value: function goToDetails() {
         var oReq = new XMLHttpRequest();
-        var url = "http://www.omdbapi.com/";
+        var url = "https://www.omdbapi.com/";
         var search = "i=".concat(this.id);
         var key = "apikey=31edb057";
         var plot = "plot=full";

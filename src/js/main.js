@@ -22,7 +22,7 @@
 
     fireSearch() {
       const oReq = new XMLHttpRequest;
-      const url = "http://www.omdbapi.com/";
+      const url = "https://www.omdbapi.com/";
       const search = `s=${this.search.query.value}`;
       const key = `apikey=31edb057`;
       const response = `r=json`;
@@ -128,7 +128,7 @@
 
     goToDetails(){
       const oReq = new XMLHttpRequest;
-      const url = "http://www.omdbapi.com/";
+      const url = "https://www.omdbapi.com/";
       const search = `i=${this.id}`;
       const key = `apikey=31edb057`;
       const plot = `plot=full`;
