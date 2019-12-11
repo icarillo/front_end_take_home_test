@@ -1,0 +1,75 @@
+html{
+    body {
+        position: relative;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}
+
+body {
+    display: table;
+    background: #0a0a0a;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+header{
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    .logo{
+        text-indent: 100px;
+        display: inline-block;
+        height: 100px;
+        width: auto;
+        background-image: url(../imgs/moviesearch.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 40px 0;
+        &-holder{
+            display: inline-block;
+        }
+    }
+    nav {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        ul{
+            display: inline-block;
+            position: relative;
+            li {
+                float: left;
+                width: 100px;
+                text-align: center;
+                padding: 7px;
+            }
+        }
+        
+    }
+}
+
+header, footer{
+    background: #000000;
+}
+
+span{
+    &[class^=col-]{
+        display: inline-block;
+        position: relative;
+        margin: 20px 0;
+    }
+}
+
+footer{
+    display: table-footer-group;
+    text-align: center;
+    p{
+        padding: 15px;
+    }
+}
